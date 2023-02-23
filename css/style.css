@@ -11,131 +11,6 @@ body
     background: rgb(255, 255, 255);
 }
 /* Nav Start */
-header{
-    position:fixed;
-    width: 100%;
-    height: 80px;
-    background:#E4E4E4;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 100px;
-    z-index: 30;
-}
-.logo img{
-height: auto;
-width: 60px;
-margin-bottom: 15px;
-}
-.logo
-{
-    margin-top: 20px;
-    font-size: 25px;
-    font-weight: lighter;
-    color: #743A0D;
-    font-family: 'MS PGothic';
-
-    /* you want text logo remove cmt */
-    /* width: 250px; */
-    width: 100px;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    /* this below line move the logo to fully left */
-    /* margin-left: -100px; */
-    /*  */
-}
-.logoTxt{
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-.nav-bar ul
-{
-    display: flex;
-}
-.nav-bar ul li a{
-    display: block;
-    color:black;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 50px;
-    transition: 0.2s;
-    margin:0 5px;
-}
-.nav-bar ul li a:hover{
-    color: #fffdfd;
-    background:#743A0D;
-}
-.nav-bar ul li a.active{
-    color: #fffdfd;
-    background: #743A0D;
-
-}
-@media only screen and ( max-width:1320px)
- {
-    header{
-        padding: 0 50px;
-    } 
-    .logo{
-        margin-left: 0px;
-    }
-   }
-@media only screen and ( max-width:1100px)
- {
-    header{
-        padding: 0 30px;
-    }    
-}
-@media only screen and ( max-width:900px) {
-    .hamburger{
-        display: block;
-        cursor: pointer;
-
-    }   
-    .hamburger .line
-    {
-        width: 30px;
-        height: 3px;
-        background:white;
-        margin: 6px 0;
-    } 
-    .nav-bar{
-        height: 0;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        width: 100vw;
-        background:#E4E4E4;
-        transition: 0.2s;
-        overflow: hidden;
-        z-index: 20;
-
-    }
-    .nav-bar.active{
-        height: 450px;
-    }
-    .nav-bar ul{
-        display: block;
-        width: fit-content;
-        margin: 80px auto 0 auto;
-        text-align: center;
-        transition: 0.5s;
-        opacity: 0;
-    }
-    .nav-bar.active ul{
-        opacity:1 ;
-    }
-    .nav-bar ul li a{
-        margin-bottom: 12px;
-        color: black;
-
-    }
-}
-
-/* Nav Start */
 
 /* Banner Start */
 .BANNER
@@ -190,14 +65,81 @@ font-family: sans-serif;
 #Savebtn
 {
     width: 300px;
-    /* height: 300px;   lusu height auto kudu sonna la */
-   
     height: auto;
+    position: absolute;
+    z-index: 13;
     
 }
 label:active{
     transform: scale(0.9);
 }
+/* popupopenning */
+#mainpop{
+    width: 100%;
+    height:100vh;
+   position: absolute;
+   display: flex;
+   justify-content: center;
+ align-items: center;
+ z-index: 6;
+
+
+   
+}
+#popup
+{
+    margin-top: 50px;
+    width: 900px;
+    height: 500px;
+    background-color:#ff4444;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 15;  
+    display:none;  
+}
+.leftpop{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 68, 255, 0.432);
+    
+}
+.rightpop
+{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+   }
+ .popupshow
+   {
+    width: 100%;
+    height:  100%;
+    overflow: hidden;
+}
+#pop{
+    width: 100%;
+    height:  700px;
+}
+.cancel{
+    width: 35px;
+    height: 35px;
+   border-radius: 50%;
+    position: absolute;
+    z-index: 14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -15px;
+    right:-13px;
+    background-color: rgb(192, 192, 192);
+
+
+}
+.fa-xmark{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
 @media screen and (max-width:980px) {
     .mainRight img {
         width: 350px;
@@ -215,6 +157,7 @@ label:active{
     }
 #Savebtn
 {
+   
     width: 200px;
     
 }
@@ -259,6 +202,8 @@ label:active{
 }
 
 /* Banner end */
+
+
 .emptybottom
 {
     width: 100%;
@@ -274,7 +219,7 @@ label:active{
     display:flex;
     justify-content: center;
     top: 650px;
-    z-index: 10;
+    z-index: 8;
   
 }
 .card{
@@ -489,24 +434,39 @@ font-family: sans-serif;
     font-size: 24px;    
     
     }
+    .slideshow
+{
+    width: 100%;
+    height: 250px; 
+}
+#slide
+{
+width: 100%;
+height: 250px;
+}    
+}
+
+.emptybottom{
+    width: 100%;
 }
 /* slideshow starting */
 .slideshow
 {
-    width: 50%;
-    height: 500px; ;
+    width: 100%;
+    height: 600px; 
+    background-color: #5b9877;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
 }
 #slide
 {
 
 width: 100%;
-height: 500px;
+height: 100%;
 }
 
 
-.emptybottom{
-    width: 100%;
-}
 /* box starting */
 .mainbox{
     width: 100%;
@@ -552,95 +512,18 @@ flex-wrap: wrap;
 .box1
 {
     background-color: #5b9877;
+    margin-bottom: 20px;
+
 }
 .box2
 {
     background-color: #f67280;
+    margin-bottom: 20px;
+
 }
 .box3
 {
     background-color: #e6bd57;
-}
-@media only screen and(max-width:450px){
-   .box{
-display: flex;
-flex-direction: row;
-margin-bottom: 10px;
-   }
     
 }
 
-
-/* footer opening */
-footer{
-    background: rgb(59,57,57);
-    background: linear-gradient(180deg, rgba(59,57,57,1) 0%, rgba(59,59,62,1) 16%, rgba(11,3,3,1) 100%);
-    height: auto;
-    width: 100vw;
-    font-family: "open sans";
-    padding-top: 40px;
-    color: white;
-}
-.footer-contents
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-   
-}
-.footer-contents h3{
-    font-size: 1.8rem;
-    font-weight: 400;
-   line-height: 3rem;
-}
-.footer-contents p{
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 14px;
-}
-.socials
-{
-list-style: none;
-display: flex;
-align-items: center;
-justify-content: center;
-margin: 1rem 0 3rem 0;
-}
-.socials li{
-   margin: 0 10px;
-
-}
-.socials a{
-    text-decoration: none;
-    color:white;
-    
-}
-.socials a  i{
-    font-size: 1.1rem;
-    transition: color .4s ease;
-}
-.socials a:hover i{
-    color: aqua;
-}
-.footer-bottom
-{
-    background: black;
-    width: 100vw;
-    padding: 20px 0;
-    text-align: center;
-
-}
-.footer-bottom p{
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-}
-.footer-bottom span{
-    text-transform: capitalize;
-    opacity: .4;
-    font-weight: 200px;
-}
-/* footer ends */

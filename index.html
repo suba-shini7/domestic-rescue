@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domestic Rescue</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href=".//css/footer.css">
+    <link rel="stylesheet" href=".//css/navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -31,7 +33,7 @@
                     <a href="">STATUS</a>
                 </li>
                 <li>
-                    <a href="">ABOUTUS</a>
+                    <a href="./pages/about.html">ABOUT US</a>
                 </li>
                 <li>
                     <a href="">ADMIN</a>
@@ -51,12 +53,32 @@
 
     <!-- Main banner opening -->
     <div class="BANNER">
+          <!-- popup openning -->
+          <div id="mainpop">
+            <div id="popup">
+               <div class="leftpop">
+                
+               </div>
+               <div class="rightpop">
+
+                <div class="popupshow">
+                    <img  id="pop" src="" >                
+                    </div>
+                    <div  onclick="closePopup()" class="cancel">
+                        <i  onclick="closePopup()" class="fa-solid fa-xmark"></i>
+                    </div>
+               </div>
+        </div>
+        </div>
+        <!-- popup end -->
         <div class="mainLeft">
             <div class="mainTitle">
                 <h1>Are you ready to save</h1>
                 <p>save the life</p>
-                <img id="Savebtn" src="asset/button.svg" alt="imgBtn">
-            </div>          
+                <img onclick="openPopup()" id="Savebtn" src="asset/button.svg" alt="imgBtn">
+               
+            </div> 
+                 
         </div>
         
         <div class="mainRight">
@@ -64,7 +86,7 @@
         </div>
     </div>
     <!-- Main banner End -->
-
+   
     <!-- cards opening -->
     <div class="cardsContainer">
 
@@ -152,7 +174,7 @@
             
             </div>
             <div class="footer-bottom">
-                <p>Copyright &2023 copyopacity. designed by <span>suba  Yasar sneha</span></p>
+                <p>Copyright &2023 copyopacity. designed by <span>suba sneha</span></p>
             </div>
         </footer>
         <script src="./scripts/scripts.js"></script>
