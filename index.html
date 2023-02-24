@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domestic Rescue</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href=".//css/footer.css">
+    <link rel="stylesheet" href=".//css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navgiation Bar start -->
+    <header>
+        <div class="logo"><img src="asset/logo.png">
+            <!-- Domestic Rescue -->
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="" class="active">HOME</a>
+                </li>
+                <li>
+                    <a href="">STATUS</a>
+                </li>
+                <li>
+                    <a href="./pages/about.html">ABOUT US</a>
+                </li>
+                <li>
+                    <a href="./pages/admin.html">ADMIN</a>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger")
+        hamburger.onclick = function () {
+            navBar = document.querySelector(".nav-bar")
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <!-- Navgiation Bar end -->
+
+    <!-- Main banner opening -->
+    <div class="BANNER">
+          <!-- popup openning -->
+          <div id="mainpop">
+            <div id="popup">
+               <div class="leftpop">
+                
+               </div>
+               <div class="rightpop">
+
+                <div class="popupshow">
+                    <img  id="pop" src="" >                
+                    </div>
+                    <div  onclick="closePopup()" class="cancel">
+                        <i  onclick="closePopup()" class="fa-solid fa-xmark"></i>
+                    </div>
+               </div>
+        </div>
+        </div>
+        <!-- popup end -->
+        <div class="mainLeft">
+            <div class="mainTitle">
+                <h1>Are you ready to save</h1>
+                <p>save the life</p>
+                <img onclick="openPopup()" id="Savebtn" src="asset/button.svg" alt="imgBtn">
+               
+            </div> 
+                 
+        </div>
+        
+        <div class="mainRight">
+            <img class="dogimg" src="./asset/dog.svg" alt="banner" width="500px">
+        </div>
+    </div>
+    <!-- Main banner End -->
+   
+    <!-- cards opening -->
+    <div class="cardsContainer">
+
+        <div class="card card1">
+            <img class="cradImg1" src="./asset/rab.svg" alt="alt">
+        </div>
+        <div id="magiccard">
+            <h1>HEADING..</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, sapiente.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, molestiae?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic maxime iure officia tempore
+             quisquam quam autem, rem architecto necessitatibus quod nisi voluptates, delectus sunt,
+              asperiores veniam ex. Tempora, minus numquam?
+            </p>
+        </div>
+        <div class="card card3">
+            <img class="cradImg2"  src="./asset/parrot.svg" alt="alt">
+        </div>
+    </div>
+<!-- cards End -->
+    <div class="empty"></div>
+    <!-- bottom banner opening -->
+    <div class=" bottomBanner">
+        <div class="bottomLeft">
+            <img class="Dogcatimg" src="asset/Dc.svg" alt="cat" >
+        </div>
+        <div class="buttomRight">
+            <div class="bottomTitle">
+                <h1>Be kind to every kind,</h1>
+                <h1>not just mankind</h1>
+            </div>
+        </div>
+    </div>
+    <!-- bottom banner end -->
+<div class="emptybottom"></div>
+    <!-- slideshow opening -->
+    <div class="slideshow">
+        <img  id="slide" src="" >  
+        </div>
+        
+        <div class="mainbox">
+           <div class="box box1">
+            <div class="logobox1">
+                <i class=" icon fa-solid fa-dog"></i>
+            </div>
+            <div class="textbox1">
+                <h3>We Heal Pets</h3>
+                <p>Lorem ipsum dolor sit </p>
+            </div>
+           </div>
+           <div class="box box2">
+            <div class="logobox2">
+                <i class=" icon fa-solid fa-bone"></i>
+            </div>
+            <div class="textbox2">
+                <h3>We care Pets</h3>
+                <p>Lorem ipsum dolor sit </p>
+            </div>
+           </div>
+           
+           <div class="box box3">
+            <div class="logobox3">
+                <i class="icon fa-solid fa-paw"></i>
+            </div>
+            <div class="textbox3">
+                <h3>We Love Pets</h3>
+                <p>Lorem ipsum dolor sit </p>
+            </div>
+           
+        </div>
+        </div>
+        <!-- footer starts -->
+        <footer>
+            <div class="footer-contents">
+                <h3>Domestic Rescue</h3>
+                <p>Lorem ijkhu jhkhui xtrd kuf xtrdtrd dtrd dtse,ymym7yi ndrrzxe
+                </p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"></a><i class="fa-brands fa-facebook-f"></i></li>
+                    <li><a href="#"></a><i class="fa-brands fa-instagram"></i></li>
+                    <li><a href="#"></a><i class="fa-brands fa-linkedin-in"></i></li>
+                    <li><a href="#"></a><i class="fa-brands fa-github"></i></li>
+                </ul>
+            
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &2023 copyopacity. designed by <span>suba sneha</span></p>
+            </div>
+        </footer>
+        <script src="./scripts/scripts.js"></script>
+</body>
+
+
+</html>
