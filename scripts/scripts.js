@@ -29,10 +29,39 @@ imgpop();
 
 // Popup form function
 
+// var modal = document.getElementById("mainpop");
+// var btn = document.getElementById("Savebtn");
+// var span = document.getElementsById("Close");
+// // When the user clicks the button, open the modal 
+// btn.onclick = function() {
+//   console.log(modal)
+//   modal.style.display = "block";
+//   console.log(modal)
+// }
+
+// // When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
+
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
+
+var audio = new Audio("./asset/btnSFX.wav");
+
 function openPopup() {
-    document.getElementById("popup").style.display = "block";
+ 
+    document.getElementById("mainpop").style.display = "block";
+    audio.play();
+    
   }
   
   function closePopup() {
-    document.getElementById("popup").style.display = "none";
+    document.getElementById("mainpop").style.display = "none";
+    audio.play();
+    
   }

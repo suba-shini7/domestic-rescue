@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href=".//css/footer.css">
     <link rel="stylesheet" href=".//css/navbar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -51,42 +53,63 @@
     </script>
     <!-- Navgiation Bar end -->
 
+   <!-- popup openning -->
+   <div id="mainpop">
+    <div id="PopHolder">
+
+   
+    <div id="popup">
+        <div class="leftpop">
+
+        </div>
+        
+        <div class="rightpop">
+
+            <div class="popupshow">
+                <img id="pop" src="">
+            </div>
+            <div onclick="closePopup()" class="cancel">
+                <i onclick="closePopup()" class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+<!-- popup end -->
+
+<!-- <div>
+    <div>
+        <div class="LeftPop">
+
+        </div>
+        <div class="RightPop">
+            <div class="popupshow">
+                <img id="pop" src="">
+            </div>
+        </div>
+    </div>
+</div> -->
+
     <!-- Main banner opening -->
     <div class="BANNER">
-          <!-- popup openning -->
-          <div id="mainpop">
-            <div id="popup">
-               <div class="leftpop">
-                
-               </div>
-               <div class="rightpop">
-
-                <div class="popupshow">
-                    <img  id="pop" src="" >                
-                    </div>
-                    <div  onclick="closePopup()" class="cancel">
-                        <i  onclick="closePopup()" class="fa-solid fa-xmark"></i>
-                    </div>
-               </div>
-        </div>
-        </div>
-        <!-- popup end -->
+     
         <div class="mainLeft">
             <div class="mainTitle">
                 <h1>Are you ready to save</h1>
                 <p>save the life</p>
                 <img onclick="openPopup()" id="Savebtn" src="asset/button.svg" alt="imgBtn">
-               
-            </div> 
-                 
+
+            </div>
+
         </div>
-        
+
         <div class="mainRight">
             <img class="dogimg" src="./asset/dog.svg" alt="banner" width="500px">
         </div>
     </div>
     <!-- Main banner End -->
-   
+
     <!-- cards opening -->
     <div class="cardsContainer">
 
@@ -96,22 +119,22 @@
         <div id="magiccard">
             <h1>HEADING..</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, sapiente.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, molestiae?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic maxime iure officia tempore
-             quisquam quam autem, rem architecto necessitatibus quod nisi voluptates, delectus sunt,
-              asperiores veniam ex. Tempora, minus numquam?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, molestiae?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic maxime iure officia tempore
+                quisquam quam autem, rem architecto necessitatibus quod nisi voluptates, delectus sunt,
+                asperiores veniam ex. Tempora, minus numquam?
             </p>
         </div>
         <div class="card card3">
-            <img class="cradImg2"  src="./asset/parrot.svg" alt="alt">
+            <img class="cradImg2" src="./asset/parrot.svg" alt="alt">
         </div>
     </div>
-<!-- cards End -->
+    <!-- cards End -->
     <div class="empty"></div>
     <!-- bottom banner opening -->
     <div class=" bottomBanner">
         <div class="bottomLeft">
-            <img class="Dogcatimg" src="asset/Dc.svg" alt="cat" >
+            <img class="Dogcatimg" src="asset/Dc.svg" alt="cat">
         </div>
         <div class="buttomRight">
             <div class="bottomTitle">
@@ -121,14 +144,14 @@
         </div>
     </div>
     <!-- bottom banner end -->
-<div class="emptybottom"></div>
+    <div class="emptybottom"></div>
     <!-- slideshow opening -->
     <div class="slideshow">
-        <img  id="slide" src="" >  
-        </div>
-        
-        <div class="mainbox">
-           <div class="box box1">
+        <img id="slide" src="">
+    </div>
+
+    <div class="mainbox">
+        <div class="box box1">
             <div class="logobox1">
                 <i class=" icon fa-solid fa-dog"></i>
             </div>
@@ -136,8 +159,8 @@
                 <h3>We Heal Pets</h3>
                 <p>Lorem ipsum dolor sit </p>
             </div>
-           </div>
-           <div class="box box2">
+        </div>
+        <div class="box box2">
             <div class="logobox2">
                 <i class=" icon fa-solid fa-bone"></i>
             </div>
@@ -145,9 +168,9 @@
                 <h3>We care Pets</h3>
                 <p>Lorem ipsum dolor sit </p>
             </div>
-           </div>
-           
-           <div class="box box3">
+        </div>
+
+        <div class="box box3">
             <div class="logobox3">
                 <i class="icon fa-solid fa-paw"></i>
             </div>
@@ -155,29 +178,29 @@
                 <h3>We Love Pets</h3>
                 <p>Lorem ipsum dolor sit </p>
             </div>
-           
+
         </div>
+    </div>
+    <!-- footer starts -->
+    <footer>
+        <div class="footer-contents">
+            <h3>Domestic Rescue</h3>
+            <p>Lorem ijkhu jhkhui xtrd kuf xtrdtrd dtrd dtse,ymym7yi ndrrzxe
+            </p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"></a><i class="fa-brands fa-facebook-f"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-instagram"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-linkedin-in"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-github"></i></li>
+            </ul>
+
         </div>
-        <!-- footer starts -->
-        <footer>
-            <div class="footer-contents">
-                <h3>Domestic Rescue</h3>
-                <p>Lorem ijkhu jhkhui xtrd kuf xtrdtrd dtrd dtse,ymym7yi ndrrzxe
-                </p>
-                <ul class="socials">
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#"></a><i class="fa-brands fa-facebook-f"></i></li>
-                    <li><a href="#"></a><i class="fa-brands fa-instagram"></i></li>
-                    <li><a href="#"></a><i class="fa-brands fa-linkedin-in"></i></li>
-                    <li><a href="#"></a><i class="fa-brands fa-github"></i></li>
-                </ul>
-            
-            </div>
-            <div class="footer-bottom">
-                <p>Copyright &2023 copyopacity. designed by <span>suba sneha</span></p>
-            </div>
-        </footer>
-        <script src="./scripts/scripts.js"></script>
+        <div class="footer-bottom">
+            <p>Copyright &2023 copyopacity. designed by <span>suba sneha</span></p>
+        </div>
+    </footer>
+    <script src="./scripts/scripts.js"></script>
 </body>
 
 
