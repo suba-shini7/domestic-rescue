@@ -40,6 +40,5 @@ function openPopup() {
   function closePopup() {
     document.getElementById("mainpop").style.display = "none";
     audio.play();
-    
   }
 
